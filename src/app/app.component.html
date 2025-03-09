@@ -1,26 +1,2 @@
-<div class="@container/MainNav">
-  <div class="flex w-full justify-end">
-    <a (hover)="expandNav()" (click)="expandNav()" class="p-10 @min-[650px]/MainNav:hidden">Menu</a>
-  </div>
-  <nav [ngClass]="{'flex flex-col justify-end w-2/3' : expanded}" [class.hidden]="!expanded" class="@min-[650px]:flex gap-10 p-10 w-full">
-    <a href="#">Logo</a>
-    <div class="grow"></div>
-    <a href="#">About</a>
-    <a href="#">Contact</a>
-    <a href="#">Pricing</a>
-    <div class="grow"></div>
-    <a href="#">Sign In</a>
-    <div class="">
-      <button popovertarget="mobileNav" popovertargetaction="show" class="">
-        test
-      </button>
-      <nav id="mobileNav" popover="auto" class="">
-        <a>Test</a>
-        <a>Test2</a>
-        <a>Test3</a>
-        <a>Test4</a>
-      </nav>
-    </div>
-  </nav>
-</div>
+<navbar />
 <router-outlet />
